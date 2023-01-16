@@ -1,0 +1,219 @@
+
+  body{
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #632778;
+  }
+  
+  #navbar-id{
+    background-color: #632778;
+  }
+ 
+  .navbar  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #632778;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .navbar a {
+    color:white;
+    text-decoration: none;
+    padding: 15px 16px;
+  }
+  
+.not-member{
+  margin-top: 50px;
+}
+
+.image-container {
+    float: left;
+    margin-left: 150px;
+    padding-top: 100px;
+    width: 400px; /* Set the width of the container */
+  }
+  
+  img {
+    width: 100%; /* Set the width of the image */
+  }
+
+input[type="text"], input[type="password"] {
+    width: 200px;
+    padding: 8px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;   
+
+  }
+
+h1{
+  margin-left: 20px;
+  margin-top: -40px;
+    color: white;
+}
+h5{
+    color:#632778;
+    margin-top: -20px;
+    margin-left: auto;
+    
+}
+h2{
+    text-align: center;
+    padding-right: 50px;
+}
+.job-seeker-login{
+    float: center;
+    padding-left: 100px;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.employer-login{
+    float: center;
+    padding-left: 100px;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+input[type="submit"]{
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #632778;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: 150px;
+    margin-left: 70px;
+  }
+  
+  .seeker-login-btn{
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #632778;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: 150px;
+    margin-left: 70px;
+  }
+  input[type="submit"]:hover,
+  input[type="submit"]:focus {
+    background-color: #6666ff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  }
+  
+  input[type="submit"]:hover {
+    transform: translateY(-1px);
+  }
+  
+  input[type="submit"]:active {
+    background-color: #3333cc;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+  }
+
+  .not-member{
+    text-align: right;
+    margin-right: 220px;
+  }
+
+  .container{
+    
+    margin-left: 350px;
+
+  }
+  .signup {
+    color: white;
+  }
+
+  #job-seeker-signup-btn{
+    color: #632778;
+  }
+
+  #employer-signup-btn{
+    color: #632778;
+  }
+
+  .custom-btn {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #632778;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: 150px;
+    margin-left: 70px;
+  }
+  /* Add a custom hover effect for the button */
+  .custom-btn:hover {
+    background-color: #632778;
+    color: white;
+    border-color: white;
+  }
+  
+  #login-submit-btn{
+      background-color: #632778;
+  }
+
+  #login-submit-btn:hover{
+    background-color: white;
+    color: #632778;
+}
+  
+
+  

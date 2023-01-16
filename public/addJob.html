@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/addJob.css">
+    <script src="./js/addJob.js"></script>
+    <title>Add Job</title>
+      </head>
+      <body>
+        <div class="container">
+          <h1 class="text-center">Add Job</h1>
+         
+            <div class="form-group">
+              <label for="position">Position</label>
+              <input type="text" class="form-control" id="position" placeholder="Enter job position">
+            </div>
+            <div class="form-group">
+              <label for="description">Description</label>
+              <textarea class="form-control" id="description" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="company">Company Name</label>
+              <input type="text" class="form-control" id="company" placeholder="Enter company name">
+            </div>
+            <div class="form-group">
+              <label for="skills">Required Skills</label>
+              <input type="text" class="form-control" id="skills" placeholder="Enter required skills (separated by commas)">
+            </div>
+            <div class="form-group">
+              <label for="experience">Experience</label>
+              <select class="form-control" id="experience">
+                <option>1 year</option>
+                <option>2 years</option>
+                <option>3 years</option>
+                <option>4 years</option>
+                <option>5 years or more</option>
+              </select>
+
+        
+            </div>
+  
+            <button type="submit" onclick="addJob()" class="btn btn-primary">Submit</button>
+      
+        </div>
+      </body>
+</html>

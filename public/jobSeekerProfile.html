@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Job Seeker Profile</title>
+    <script src="./js/home.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Job Seeker Profile</h1>
+      <form>
+        <div class="form-group">
+          <label for="education">Education</label>
+          <textarea class="form-control" id="education" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="skills">Skills</label>
+          <input type="text" class="form-control" id="skills" placeholder="Enter your skills, separated by commas">
+        </div>
+        <div class="form-group">
+          <label for="experience">Experience</label>
+          <select class="custom-select" id="experience">
+            <option selected>Select your experience</option>
+            <option value="fresher">Fresher</option>
+            <option value="1-2 years">1-2 years</option>
+            <option value="2-5 years">2-5 years</option>
+            <option value="5-10 years">5-10 years</option>
+            <option value="10+ years">10+ years</option>
+          </select>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="reDirectseekerDash()">Save</button>
+      </form>
+    </div>
+  </body>
+</html>

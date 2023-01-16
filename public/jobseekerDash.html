@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Job Seeker Profile</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Job Seeker Profile</h1>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Education</h5>
+          <p class="card-text" id="education"></p>
+          <h5 class="card-title">Skills</h5>
+          <p class="card-text" id="skills"></p>
+          <h5 class="card-title">Experience</h5>
+          <p class="card-text" id="experience"></p>
+          <button class="btn btn-primary" onclick="jobSeekerProfile()">Edit Profile</button>
+        </div>
+      </div>
+      <br>
+      <button class="btn btn-primary" onclick="findJobs()">Find Jobs</button>
+    </div>
+    <script>
+      function jobSeekerProfile() {
+        window.location.href = "jobSeekerProfile.html";
+      }
+      function findJobs() {
+        window.location.href = "jobSeekerFind.html";
+      }
+    </script>
+  </body>
+</html>
