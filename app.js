@@ -22,7 +22,8 @@ app.use('/jobseekers',jobSeekerRouter)
 app.use('/', authRouter)
 app.use('/employers',employerRouter)
 
-app.listen(3000, ()=>{
+const PORT = process.env.PORT || 3000
+app.listen(PORT, ()=>{
     console.log("server started successfully on port 3000")
     DBConnect()
 })
