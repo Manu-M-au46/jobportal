@@ -1,13 +1,10 @@
 async function addSeeker(){
    
-    const mobileno =  document.getElementById('mobNo').value
-    const address =  document.getElementById('address').value
-    const basiceducation =  document.getElementById('basiceducation').value
-    const skills =  document.getElementById('skills').value
-    const experience =  document.getElementById('experience').value
-    const aboutme =  document.getElementById('aboutme').value
+    const mobileno =  document.getElementById('education').value
+    const address =  document.getElementById('skills').value
+    const basiceducation =  document.getElementById('experience').value
  
- const addJobSeekerResponseObj = await fetch ('/jobseekers', {
+ const addJobSeekerResponseObj = await fetch ('/addSeeker', {
      method: 'POST',
      headers: {
          'Content-type': 'application/json'
@@ -24,9 +21,9 @@ async function addSeeker(){
  
  const addJobSeekerstatus = await addJobSeekerResponseObj.json()
  console.log(addJobSeekerstatus)
-//  if(addJobSeekerstatus.status === 'success'){
-//      window.location = '/EmployerDash.html'
-//  }
+ if(addJobSeekerstatus.status === 'success'){
+     window.location = '/jobSeekerDash.html'
+
  }
  
- 
+}

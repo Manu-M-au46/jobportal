@@ -5,7 +5,7 @@ async function signUp(){
     const cpassword =  document.getElementById('cpassword').value
     const userCategory =  document.getElementById('userCategory').value
 
- const addJobSeekerResponseObj = await fetch ('/users', {
+ const addJobSeekerResponseObj = await fetch ('/signup', {
      method: 'POST',
      headers: {
          'Content-type': 'application/json'
@@ -21,8 +21,8 @@ async function signUp(){
  
  const addJobSeekerstatus = await addJobSeekerResponseObj.json()
  console.log(addJobSeekerstatus)
- if(addJobSeekerstatus.status === 'success'){
-     window.location.href = "jobSeekerProfile.html"
+ if(addJobSeekerstatus.status === 'sucess'){
+     window.location = "/jobSeekerProfile.html"
  }
  }
  
