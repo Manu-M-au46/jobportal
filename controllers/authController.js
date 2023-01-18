@@ -49,7 +49,7 @@ try {
    res.send({status: 'success', msg: "user loggedin successfully"})
 
 } catch (error) {
-    res.status(500).send({error} )
+    res.status(400).send({status: 'error', msg: "password incorrect"})
 }
 
 }
