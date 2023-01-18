@@ -3,17 +3,6 @@ const { Schema } = require('mongoose')
 
 const SeekerProfileSchema = new Schema({
 
-   
-    mobileno: {
-        type: Number,
-        required: true,
-    },
-
-    address: {
-        type: String,
-        required: true,
-    },
-
     education: {
         type: String,
         required: true
@@ -23,7 +12,7 @@ const SeekerProfileSchema = new Schema({
         type: String,
         required: true
     },
-    bio: {
+    experience: {
         type: String,
         required: true
     }

@@ -28,9 +28,9 @@ try {
 }
 
 const login = async (req,res) => {
- const { email, password } = req.body
+ const { email, password, userCategory } = req.body
 try {
-   const loggedInSeeker = await signUpModel.findOne({email}, {email: 1, password: 1})
+   const loggedInSeeker = await signUpModel.findOne({email},  {email: 1, password: 1}, {userCategory: 1})
    if(!loggedInSeeker){
     res.status(404).send({status: 'error', msg: "user not found"})
    }
@@ -41,11 +41,15 @@ try {
    const userPayload = { email }
    const token = jwt.sign( userPayload, SECRET_KEY, {algorithm: 'HS256', expiresIn: '1d'})
    console.log(token)
-   
+   console.log(token)
+
    res.cookie('jwt', token)
+  
+
    res.send({status: 'success', msg: "user loggedin successfully"})
+
 } catch (error) {
-    res.status(500).send({status: 'error', error, msg: "Internal Server Error"})
+    res.status(500).send({error} )
 }
 
 }

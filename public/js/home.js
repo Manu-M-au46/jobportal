@@ -4,9 +4,9 @@
     window.location.href = 'signUp.html'
   }
 
- async function logIn() {
+ async function login() {
 
-  const emailId =  document.getElementById('inputEmail').value
+  const email =  document.getElementById('inputEmail').value
   const password =  document.getElementById('inputPassword').value
   const userCategory =  document.getElementById('userCategory').value
 
@@ -16,7 +16,7 @@ const loginResponseObj = await fetch ('/login', {
        'Content-type': 'application/json'
    },
    body: JSON.stringify({
-     emailId,
+     email,
      password,
      userCategory
    })
@@ -24,8 +24,8 @@ const loginResponseObj = await fetch ('/login', {
 
 const loginstatus = await loginResponseObj.json()
 console.log(loginstatus)
-if(loginstatus.status === 'sucess'){
-   window.location = "/jobSeekerDash.html"
+if(loginstatus.status === 'success'){
+  window.location = "/jobSeekerDash.html"
 }
 }
 
