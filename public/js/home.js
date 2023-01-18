@@ -25,7 +25,7 @@ const loginResponseObj = await fetch ('/login', {
 const loginstatus = await loginResponseObj.json()
 console.log(loginstatus)
 if(loginstatus.status === 'success'){
-  window.location = "/jobSeekerDash.html"
+  window.location = "/jobseekerDash.html"
 }
 }
 

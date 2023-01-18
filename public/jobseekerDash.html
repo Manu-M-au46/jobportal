@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Edit Profile</title>
+    <script src="./js/findjob.js"></script>
   </head>
   <body>
     <div class="container">
@@ -21,13 +22,28 @@
       <br>
       <button class="btn btn-primary" onclick="findJobs()">Find Jobs</button>
     </div>
+    <ul id="job-list"></ul>
     <script>
       function jobSeekerProfile() {
         window.location.href = "jobSeekerEditProfile.html";
       }
-      function findJobs() {
-        window.location.href = "jobSeekerFind.html";
-      }
+     async function findJobs() {
+        const jobsListEle = document.getElementById('job-list')
+        const   getJobsResponse = await fetch ('/jobs')
+    const getjobsbody = await getJobsResponse.json()
+
+    const { jobs } = getjobsbody
+     if(jobs.length ===0){
+        jobsListEle.append('no jobs found')
+     }else{
+        for (let index = 0; index < jobs.length; index++) {
+            const job = jobs[index];
+            const liEle =  document.createElement('li')
+            liEle.innerHTML = job.position
+            jobsListEle.append(liEle)
+        }
+     }
+    }
     </script>
   </body>
 </html>
